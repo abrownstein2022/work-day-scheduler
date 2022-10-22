@@ -1,3 +1,6 @@
+//set var to work with to display save msg when user presses save button
+let showSaveMsg = document.querySelector("#show-save-msg");
+
 //on load trigger . when document loads, fetches current month and day
 //$ means jquery - shorter way to get data from page than using JS 
 $(document).ready(function(){
@@ -26,6 +29,33 @@ $(document).ready(function(){
  
      }
      updateHour();
+     setInterval(updateHour,60000);  //timer function in JS.  SetInterval here will call function updateHour every 60000 milliseconds which is one minute
+ 
+     //loop through local storage to put data in timeblocks that was already saved
+     //9 means 9am and 17 means 5pm, # in jquery is short for ID also in css the same 
+     //description below is the class associated with each textarea so this is like doing getElementsByClass
+     for(let i = 9; i<=17;i++){
+         $("#"+i+" .description").val(localStorage.getItem(i));
+     }
+     //based on the save button clicked, get the data in its sibling text area (which has class description)
+     $(".saveBtn").on("click",function(){
+         let text = $(this).siblings(".description").val();
+         let hour = $(this).parent().attr("id");  //go to parent attr ID which contains the hour value ie. 9, 10, 11, 12, 13 etc. it's like a hard-coded value that means something.
+         localStorage.setItem(hour,text);  //this is unique because hour (id) is unique so each hour/id has its own desc associated with it in local storage
+        //when local storage added, show message on html page to let user know.  Need to remove hide on that element so it will be displayed.  Will hide on refresh.
+        showSaveMsg.classList.remove("hide");  
+     })
 
-}
-)
+     $(window).scroll(function() {
+        if ($(this).scrollTop()>250)
+         {
+            $('#show-save-msg').hide(1000);
+         }
+        else
+         {
+          $('#show-save-msg').show(1000);
+         }
+     });
+ 
+ }
+ )
