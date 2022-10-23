@@ -1,12 +1,12 @@
 //set var to work with to display save msg when user presses save button
-let showSaveMsg = document.querySelector("#show-save-msg");
+let showSaveMsg = document.querySelector("#save-msg");
 
 //on load trigger . when document loads, fetches current month and day
 //$ means jquery - shorter way to get data from page than using JS 
 $(document).ready(function(){
     $("#currentDay").text(moment().format("dddd, MMMM Do"));  //id currentDay from html page stores current day value
     function updateHour(){
-        let currentHour = moment().hours() - 5;  //gets current hours from moment which is date/time in JS
+        let currentHour = moment().hours() -2;  //gets current hours from moment which is date/time in JS
         $(".time-block").each(function(){  //loop through id attributes 
              let blockHour = Number($(this).attr("id"));  //get id attribute for each timeblock element - convert to Number from default string data type
              if(blockHour < currentHour){  //this means current timeblock in the past, so add the css class "past" to this timeblock
@@ -42,20 +42,16 @@ $(document).ready(function(){
          let text = $(this).siblings(".description").val();
          let hour = $(this).parent().attr("id");  //go to parent attr ID which contains the hour value ie. 9, 10, 11, 12, 13 etc. it's like a hard-coded value that means something.
          localStorage.setItem(hour,text);  //this is unique because hour (id) is unique so each hour/id has its own desc associated with it in local storage
-        //when local storage added, show message on html page to let user know.  Need to remove hide on that element so it will be displayed.  Will hide on refresh.
+        //when local storage added, show message on html page to let user know. Remove hide on that element so it will be displayed.  
         showSaveMsg.classList.remove("hide");  
-     })
+        //now want to add hide back to this display element after 2 seconds
+        //https://alvarotrigo.com/blog/wait-1-second-javascript/
+        setTimeout(function(){
+            showSaveMsg.classList.add("hide");
+        }, 2000);
 
-     $(window).scroll(function() {
-        if ($(this).scrollTop()>250)
-         {
-            $('#show-save-msg').hide(1000);
-         }
-        else
-         {
-          $('#show-save-msg').show(1000);
-         }
-     });
- 
+    })
+       
  }
  )
+
