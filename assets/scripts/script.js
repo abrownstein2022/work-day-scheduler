@@ -6,7 +6,7 @@ let showSaveMsg = document.querySelector("#save-msg");
 $(document).ready(function(){
     $("#currentDay").text(moment().format("dddd, MMMM Do"));  //id currentDay from html page stores current day value
     function updateHour(){
-        let currentHour = moment().hours() -2;  //gets current hours from moment which is date/time in JS
+        let currentHour = moment().hours();  //gets current hours from moment which is date/time in JS
         $(".time-block").each(function(){  //loop through id attributes 
              let blockHour = Number($(this).attr("id"));  //get id attribute for each timeblock element - convert to Number from default string data type
              if(blockHour < currentHour){  //this means current timeblock in the past, so add the css class "past" to this timeblock

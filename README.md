@@ -23,9 +23,6 @@ THEN the text for that event is saved in local storage<br>
 WHEN I refresh the page<br>
 THEN the saved events persist<br>
 <br><br>
-Mock-Up<br>
-The following animation demonstrates the application functionality:<br>
-
 
 ## Table of Contents
 
@@ -41,17 +38,27 @@ The following animation demonstrates the application functionality:<br>
 
 ## Installation
 
-I used VS Code software to edit code and git/Terminal to push changes to GitHub.  
+No installation is needed to use this application. 
 
+Here's a link to the GitHub repo for this project:
+https://github.com/abrownstein2022/ch5-third-party-api-work-day-sch
 ## Usage
+Just click on the link below to use this application:
+https://abrownstein2022.github.io/ch5-third-party-api-work-day-sch
 
-Here's a link to my website stored in GitHub:
-https://abrownstein2022.github.io/Mod2AdvCSSPortfolio
+This calendar displays the background of the current timeblock in red, past timeblocks in gray and future timeblocks in green.
 
-Here's a screenshot of my final webpage from a browser:
+Click into a timeblock to add, change or remove text.  Please remember to press the Save button on the far right of the current row to save your changes.  
+
+Your text will be saved in localStorage.  This means that when you refresh the page, your data will still be there unless you change it.
+
+Please refer to the screenshots and animation below to see the application being used.
     
-![website-image](assets/images/screenshot-challenge2.png)
-    
+![website-image](assets/images/ch5-screenshot1.png)
+![website-image](assets/images/ch5-screenshot2.png)
+![website-image](assets/images/ch5-screenshot3.png)    
+
+
 
 ## Credits
 N/A
@@ -67,12 +74,11 @@ N/A
 ## Features
 
 The main features in this project are:
-1. My name, a recent photo and links to info about me, my work and how to contact me appear on this website
-2. I created the website using Semantic, responsive HTML code and advanced CSS, including flexboxes
-3. Project links open in a new window
-4. Different color appears when hovering over a text link
-5. Clicking on a link in the navigation takes you to that section on the website
-6. The first application in the course shows as a larger box than the subsequent projects
+People can enter events into this easy-to-use workday calendar and refer to it throughout the day.
+
+The calendar display the current hour in red, past events in gray and future events in green.
+
+Once you enter text for your task, press the Save icon on the right to see a message that your entry has been saved.  
 
 ## How-to-Contribute
 
@@ -80,4 +86,4 @@ N/A
 
 ## Tests
 
-I used ChromeDevTools to help debug issues.  I tested all the links and features, ie. hover, opening the project links in a new window, and pointing to the correct images from the nav.
+The user does not need to do any tests.  This project was tested thoroughly.
