@@ -58,7 +58,7 @@ Please refer to the screenshots and animation below to see the application being
 ![website-image](assets/images/ch5-screenshot2.jpg)
 ![website-image](assets/images/ch5-screenshot3.png)    
 
-
+https://github.com/abrownstein2022/ch5-third-party-api-work-day-sch/ch5-demo.webm.mov
 
 ## Credits
 N/A
