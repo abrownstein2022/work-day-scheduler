@@ -55,7 +55,7 @@ Your text will be saved in localStorage.  This means that when you refresh the p
 Please refer to the screenshots and animation below to see the application being used.
     
 ![website-image](assets/images/ch5-screenshot1.png)
-![website-image](assets/images/ch5-screenshot2.png)
+![website-image](assets/images/ch5-screenshot2.jpg)
 ![website-image](assets/images/ch5-screenshot3.png)    
 
 
