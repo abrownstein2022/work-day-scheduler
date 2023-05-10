@@ -41,10 +41,10 @@ THEN the saved events persist<br>
 No installation is needed to use this application. 
 
 Here's a link to the GitHub repo for this project:
-https://github.com/abrownstein2022/ch5-third-party-api-work-day-sch
+https://github.com/abrownstein2022/work-day-scheduler
 ## Usage
 Just click on the link below to use this application:
-https://abrownstein2022.github.io/ch5-third-party-api-work-day-sch
+https://abrownstein2022.github.io/work-day-scheduler
 
 This calendar displays the background of the current timeblock in red, past timeblocks in gray and future timeblocks in green.
 
@@ -58,7 +58,6 @@ Please refer to the screenshots and animation below to see the application being
 ![website-image](assets/images/ch5-screenshot2.jpg)
 ![website-image](assets/images/ch5-screenshot3.png)    
 
-https://github.com/abrownstein2022/ch5-third-party-api-work-day-sch/ch5-demo.webm.mov
 
 ## Credits
 N/A
