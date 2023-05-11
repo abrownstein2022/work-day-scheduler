@@ -1,4 +1,4 @@
-# Rutgers Bootcamp Challenge 5 - Work Day Scheduler using Third Party APIs
+# Work Day Scheduler using Third Party APIs
 
 ## Description
 This website allows people to manager their daily schedules.<br>
