@@ -1,7 +1,7 @@
 # Work Day Scheduler using Third Party APIs
 
 ## Description
-This website allows people to manager their daily schedules.<br>
+This website allows people to manage their daily schedules.<br>
 <br>
 User Story<br>
 AS AN employee with a busy schedule<br>
